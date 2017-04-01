@@ -44,3 +44,10 @@ cacheSolve <- function(x, ...) {
   x$setinverse(m)
   m
 }
+
+x <- diag(2,3)
+x
+
+X <- makeCacheMatrix(x)
+invX <- cacheSolve(X)
+invX
